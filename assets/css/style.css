@@ -1903,7 +1903,49 @@ body.modal-open {
   -webkit-transform: scale(1.07);
   transform: scale(1.07);
 }
+.img-full-blog{
+  background: var(--color-white);
+  box-shadow: 0px 0px 5px #efefef;
+}
+.img-full-blog a>div{
+  padding: 20px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.img-full-blog a{
+  color:var(--heading-color)
+}
+.img-full-blog a>div h3{
+  font-size:16px;
+  margin-bottom:10px
+}
+.img-full-blog a>div span{}
+.h-heigt img{
+  height: 510px;
+  width: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1400px){
+  .h-heigt img{
+    height: 490px;
+  }
+}
+@media only screen and (max-width: 1200px){
 
+  .h-heigt img{
+    height: 419px;
+  }
+}
+@media only screen and (max-width: 992px){
+  .h-heigt{
+    margin-bottom:30px
+  }
+  .h-heigt img{
+    height:auto;
+  }
+}
 /*---- banner width settings start ----*/
 .col1 {
   max-width: 44.3%;
@@ -6117,7 +6159,7 @@ body.modal-open {
   overflow: hidden;
   background: #333333;
   position: relative;
-  padding: 130px 0px;
+  padding: 120px 0px;
 }
 .bg-dark-g::after{
   content: '';
