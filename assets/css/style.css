@@ -6130,7 +6130,7 @@ body.modal-open {
     border: 1px solid var(--heading-color);
     text-align: left;
     display: inline-block;
-    padding: 7px 26px;
+    padding: 9px 26px 5px;
     color: var(--heading-color);
     font-weight: 500;
     transition: all 0.4s ease-out 0s;
@@ -6203,4 +6203,11 @@ body.modal-open {
 }
 .headdin-two h2{
   color:#f0f0f0
+}
+
+
+
+.bg-bl {
+  background: #333333;
+  height: 500px;
 }
