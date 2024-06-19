@@ -1126,7 +1126,7 @@ body.modal-open {
   height: 40px;
   color: #333c4a;
   font-size: 28px;
-  line-height: 40px;
+  /* line-height: 40px; */
   text-align: center;
   cursor: pointer;
 }
@@ -5872,29 +5872,32 @@ body.modal-open {
 
 /*------- newsletter area end -------*/
 /*------ footer widget area start ------*/
-.footer-widget {
+.footer-area-top{
+  background-color: var(--color-light-white);
+}
+.footer-area {
   padding-right: 50px;
 }
 @media only screen and (min-width: 1600px) {
-  .footer-widget {
+  .footer-area {
     padding-right: 100px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .footer-widget {
+  .footer-area {
     padding-right: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
-  .footer-widget {
+  .footer-area {
     margin-bottom: 30px;
     padding-right: 0;
   }
 }
-.footer-widget .footer-widget-title {
+.footer-area .footer-area-title {
   padding-bottom: 30px;
 }
-.footer-widget .footer-widget-title h3 {
+.footer-area .footer-area-title h3 {
   color: #333c4a;
   display: inline;
   font-size: 18px;
@@ -5903,7 +5906,7 @@ body.modal-open {
   text-transform: uppercase;
   position: relative;
 }
-.footer-widget .footer-widget-title h3:before {
+.footer-area .footer-area-title h3:before {
   bottom: -10px;
   left: 0;
   width: 80px;
@@ -5912,7 +5915,7 @@ body.modal-open {
   position: absolute;
   background-color: var(--color-hover);
 }
-.footer-widget .footer-widget-body p {
+.footer-area .footer-area-body p {
   color: #707070;
   font-size: 15px;
 }
@@ -5961,25 +5964,25 @@ body.modal-open {
   text-decoration: underline;
 }
 
-.white-bg .footer-widget .footer-widget-title h3 {
+.white-bg .footer-area .footer-area-title h3 {
   color: #ffffff;
 }
-.white-bg .footer-widget .footer-widget-body p {
+.white-bg .footer-area .footer-area-body p {
   color: #bdbdbd;
 }
-.white-bg .footer-widget .footer-widget-body .useful-link li a {
+.white-bg .footer-area .footer-area-body .useful-link li a {
   color: #bdbdbd;
 }
-.white-bg .footer-widget .footer-widget-body .useful-link li a:hover {
+.white-bg .footer-area .footer-area-body .useful-link li a:hover {
   color: var(--color-hover);
 }
-.white-bg .footer-widget .footer-widget-body .address-box li span {
+.white-bg .footer-area .footer-area-body .address-box li span {
   color: #ffffff;
 }
-.white-bg .footer-widget .footer-widget-body .address-box li p a {
+.white-bg .footer-area .footer-area-body .address-box li p a {
   color: #bdbdbd;
 }
-.white-bg .footer-widget .footer-widget-body .address-box li p a:hover {
+.white-bg .footer-area .footer-area-body .address-box li p a:hover {
   color: var(--color-hover);
 }
 
