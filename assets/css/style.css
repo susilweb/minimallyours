@@ -607,7 +607,7 @@ body.modal-open {
 /* ----scroll to top css ----*/
 .scroll-top {
   background-color: var(--color-hover);
-  bottom: 50px;
+  bottom: 120px;
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
           box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   cursor: pointer;
@@ -1498,8 +1498,7 @@ body.modal-open {
   font-size: 15px;
   line-height: 1;
   display: inline-block;
-  padding: 12px 20px 14px;
-  border-radius: 4px;
+  padding: 18px 30px 14px;
   background-color: #ebebeb;
   text-transform: capitalize;
 }
@@ -1518,7 +1517,44 @@ body.modal-open {
 .product-btn__color a:hover {
   background-color: #333c4a;
 }
-
+.product-btn__color-two a{
+  font-size: 15px;
+  line-height: 1;
+  display: inline-block;
+  padding: 18px 80px 14px;
+  border-radius: 0px;
+  background-color: var(--heading-color);
+  text-transform: capitalize;
+  margin-left: 10px;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .product-btn a{
+    text-align: center;
+        padding: 20px 10px 15px;
+        font-size: 14px;
+        font-weight: 500;
+        display: block;
+        margin: 0;
+  }
+  .product-btn.product-btn__color{
+    width: 40%;
+  }
+  .product-btn.product-btn__color-two{
+    width: 60%;
+  }
+  .product-btn__color-two a{
+    width:100%;
+  }
+  .mobile{
+    position: fixed;
+        bottom: -25px;
+        width: 100%;
+        background: #fff;
+        z-index: 1;
+        left: 0;
+  }
+}
 /*------------ button style end ------------*/
 /*-------- slider area start --------*/
 .hero-1 {
