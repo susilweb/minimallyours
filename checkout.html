@@ -663,7 +663,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form class="add-address-from" method="post" action="https://www.gemsroot.com/user/new/address">
+            <form class="add-address-from">
                 <fieldset class="address">
                    <input type="hidden" name="_token" value="fDPDIFy8Fe8G4Yhot9U3rLGWs4o0fx69LRPcik2V"> 
                    <div class="form-row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
@@ -706,20 +706,6 @@
                    <div class="form-group">
                       <label for="new-street-address" class="d-none">Street Address <span class="required">*</span></label>
                       <input type="text" name="address" placeholder="Street Address" value="" id="new-street-address">
-                      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUvpHzkjkS6_RDlV5BSEkCu6OFsSCzdPs&amp;loading=async&amp;libraries=places"></script>
-                                                 <script>
-                                                  var input = document.getElementById('new-street-address');
-                                                  var autocomplete = new google.maps.places.Autocomplete(input,{});
-                                                  google.maps.event.addListener(autocomplete, 'place_changed', function(){
-                                                  var place = autocomplete.getPlace();
-                                                 })
-                                          </script>
-                                          <style>
-                                               .pac-container {
-                                              z-index: 1056 !important;
-                                              }
- 
-                                           </style>
                    </div>
                    <div class="modal-footer justify-content-center">
                       <input type="submit" class="btn btn-primary m-0" value="Add Address">
