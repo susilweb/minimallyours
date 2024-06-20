@@ -1554,6 +1554,33 @@ body.modal-open {
   position: sticky;
         top: 100px;
 }
+.mini-discount-info-box {
+  display: flex;
+  align-items: center;
+}
+.mini-discount-info-box .mini-discount-info {
+  background-color: #fff9e9;
+  padding: 15px 10px;
+  margin-right: 5px;
+  width: 250px;
+}
+.mini-discount-info-box .mini-discount-info .h-tag-h {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--nav-color);
+}
+.mini-discount-info-box .mini-discount-info .h-tag {
+  font-size: 12px;
+  color: var(--nav-color);
+}
+.mini-discount-info-box .mini-discount-info span {
+  display: block;
+}
+.mini-discount-info-box .mini-discount-info .h-tag-term a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #d66c6c;
+}
 @media only screen and (max-width: 768px) {
   .product-btn a{
     text-align: center;
@@ -4373,7 +4400,9 @@ font-weight:600
   padding: 3px 0;
   list-style: inherit;
 }
-
+.review-form{
+  padding:30px
+}
 .review-form h5 {
   font-size: 18px;
   font-weight: 500;
