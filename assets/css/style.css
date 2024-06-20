@@ -2160,9 +2160,13 @@ body.modal-open {
   top: 45px;
 }
 .product-thumb .product-action-link {
-  top: 15px;
-  right: 15px;
-  position: absolute;
+  position:absolute;
+  display:flex;
+  gap:10px;
+  bottom:25px;
+  left:50%;
+  transform:translateX(-50%)
+
 }
 .product-thumb .product-action-link a {
   color: #333c4a;
