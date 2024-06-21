@@ -4745,7 +4745,38 @@ font-weight:600
   overflow: auto;
   width: 100%;
 }
-
+#addressModal{}
+#addressModal{} .modal-content{
+  padding: 40px 60px;
+}
+#addressModal .modal-header .btn-close{
+  position: absolute;
+    top: 20px;
+    right: 30px;
+}
+#addressModal .modal-header{
+  padding: 0px;
+}
+#addressModal .modal-body{
+padding:0px 0px 0px 0px 
+}
+.billing-form-wrap{}
+.btn-custom{
+  width: auto !important;
+    padding: 12px 35px !important;
+    border-radius: 0px;
+    background-color: var(--color-gray) !important;
+    color: var(--color-white) !important;
+}
+.btn-custom:hover{
+  background-color: var(--color-hover) !important;
+  border-color:var(--color-hover) !important;
+}
+@media (min-width: 992px) {
+  #addressModal .modal-lg, #addressModal .modal-xl {
+      --bs-modal-width: 660px;
+  }
+}
 /*------- input box style css end -------*/
 /*-------- Custom Checkbox Style start --------*/
 .custom-checkbox.custom-control,
