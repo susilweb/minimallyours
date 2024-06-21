@@ -79,7 +79,7 @@
 	// responsive menu js
 	jQuery('#mobile-menu').meanmenu({
 		meanMenuContainer: '.mobile-menu',
-		meanScreenWidth: "991"
+		meanScreenWidth: "992"
 	});
 
 	// tooltip active js

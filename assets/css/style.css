@@ -795,7 +795,7 @@ body.modal-open {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu ul li a {
-    padding: 35px 10px;
+    padding: 35px 5px;
   }
 }
 .main-menu ul li:hover > a, .main-menu ul li.active > a {
@@ -1203,7 +1203,7 @@ body.modal-open {
 /*------ search wrapper start ------*/
 .block-bg {
   background: rgba(22, 22, 27, 0.98);
-  height: 100%;
+  height: 150px;
   left: 0;
   opacity: 0;
   position: fixed;
@@ -1218,12 +1218,12 @@ body.modal-open {
   transition: all 0.4s ease-out;
 }
 .block-bg .minisearch .field__search {
-  left: 0;
+  /* left: 0;
   margin: 0 auto auto;
   max-width: 1000px;
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 50%; */
 }
 .block-bg .minisearch .field__search input {
   color: #ffffff;
@@ -1280,8 +1280,8 @@ body.modal-open {
   cursor: pointer;
   font-size: 14px;
   text-transform: uppercase;
-  top: 50px;
-  right: 60px;
+  top: 2px;
+    right: 15px;
   padding-top: 5px;
   position: absolute;
   padding-right: 25px;
@@ -2976,7 +2976,7 @@ body.modal-open {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .breadcrumb-wrap nav .breadcrumb .breadcrumb-item a:hover {
   color: var(--color-hover);
@@ -3007,7 +3007,7 @@ body.modal-open {
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 479px) {
   .breadcrumb-wrap nav .breadcrumb .breadcrumb-item.active {
@@ -4700,23 +4700,23 @@ font-weight:600
 }
 
 /*------- input box style css start -------*/
-.single-input-item {
+.minimally-fomr-input {
   margin-top: 20px;
 }
-.single-input-item label {
+.minimally-fomr-input label {
   color: #333c4a;
   text-transform: capitalize;
   font-size: 14px;
 }
-.single-input-item label.required:after {
+.minimally-fomr-input label.required:after {
   content: "*";
   color: red;
   font-size: 14px;
   margin-left: 3px;
   margin-top: 5px;
 }
-.single-input-item input,
-.single-input-item textarea {
+.minimally-fomr-input input,
+.minimally-fomr-input textarea {
   color: #606060;
   border: 1px solid #ccc;
   padding: 12px 10px;
@@ -4724,23 +4724,23 @@ font-weight:600
   font-size: 14px;
   background: #f7f7f7;
 }
-.single-input-item input:active, .single-input-item input:focus,
-.single-input-item textarea:active,
-.single-input-item textarea:focus {
+.minimally-fomr-input input:active, .minimally-fomr-input input:focus,
+.minimally-fomr-input textarea:active,
+.minimally-fomr-input textarea:focus {
   border-color: var(--color-hover);
   background-color: #ffffff;
 }
-.single-input-item .nice-select {
+.minimally-fomr-input .nice-select {
   width: 100%;
   border-radius: 0;
   height: 48px;
   border-color: #ccc;
   background-color: #f7f7f7;
 }
-.single-input-item .nice-select .current {
+.minimally-fomr-input .nice-select .current {
   color: #606060;
 }
-.single-input-item .nice-select .list {
+.minimally-fomr-input .nice-select .list {
   max-height: 200px;
   overflow: auto;
   width: 100%;
@@ -5035,6 +5035,10 @@ padding-bottom: 10px;
 .cart-calculator-wrapper .cart-calculate-items .table tr td.total-amount {
   color: var(--color-hover);
   font-weight: 700;
+  font-size: 20px;
+}
+.cart-calculator-wrapper .cart-calculate-items .table .total {
+  border-bottom: transparent;
 }
 .cart-calculator-wrapper a {
   border-radius: 0;
@@ -5071,6 +5075,9 @@ padding-bottom: 10px;
   top: 10px;
   right: 10px;
 }
+.drpo-new .dropdown-toggle::after{
+display:none
+}
 .drpo-new .btn-secondary {
   padding: 2px 10px;
   background: #fff;
@@ -5078,14 +5085,22 @@ padding-bottom: 10px;
   border-radius: 0px;
 }
 .drpo-new .btn-secondary svg {
-  color: #b94f9d;
+  color: var(--color-hover);
 }
 .drpo-new .dropdown-menu {
   min-width: auto;
   border: none;
+  background: #f7f0f0;
+  padding:0;
+  border-radius:0px
 }
+
 .drpo-new .dropdown-item {
-  padding: 0px;
+  padding: 2px 8px;
+  border-bottom: 1px solid #ddd;
+}
+.drpo-new .dropdown-item:last-child{
+  border:none
 }
 .drpo-new .dropdown-item a, .drpo-new .dropdown-item .bottom-btn {
   display: flex;
@@ -5104,8 +5119,8 @@ padding-bottom: 10px;
   display: block;
   width: 48%;
   background: transparent;
-  color: #b73476;
-  border: 1px solid #f5e6f1;
+  color: var(--color-hover);
+  border: 1px solid var(--color-hover);;
   font-size: 16px;
   padding: 25px 26px;
 }
@@ -6291,7 +6306,7 @@ padding-bottom: 10px;
 }
 
 .address-box li {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .address-box li:last-child {
   margin-bottom: 0;
