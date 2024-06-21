@@ -5043,12 +5043,21 @@ padding-bottom: 10px;
 .address-label {
   display: block !important;
 }
+.top-sec{}
+.top-sec h3{
+  color:var(--heading-color);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
 .new-addres-field .bg-block {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  background-color: #fbf4f9;
+  background-color: #fbfbfb;
   position: relative;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
 }
 .bg-block {
   padding: 20px 46px 20px 20px;
@@ -5089,7 +5098,7 @@ padding-bottom: 10px;
   font-weight: 500;
 }
 .add-addres-button {
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .add-addres-button .btn {
   display: block;
@@ -5106,14 +5115,16 @@ padding-bottom: 10px;
 }
 .block-content .title {
   text-transform: capitalize !important;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 .payment-act-wrpaer {
   margin-bottom: 15px;
 }
 .payment-act-wrpaer .input-set {
   display: flex;
-  background-color: #fbf4f9;
+  background-color: #ebe1ca;
   padding: 30px;
   gap: 10px;
   position: relative;
@@ -5126,7 +5137,7 @@ padding-bottom: 10px;
   width: 146px;
 }
 .payment-act-wrpaer .input-set .text-sect {
-  background-color: #f5e6f1;
+  background-color: #ffffff;
   position: absolute;
   right: 16px;
   top: 18px;
@@ -5160,9 +5171,49 @@ padding-bottom: 10px;
 }
 .check-out-d .btn {
   border: none;
-  width: 380px;
-  padding: 15px 15px;
-  border-radius: 0;
+    width: 380px;
+    padding: 15px 15px;
+    border-radius: 0;
+    background: var(--heading-color);
+}
+@media only screen and (max-width: 991px) {
+  .mobile-check-out-sect {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      left: 0;
+      background: #fff;
+      -webkit-box-shadow: 0px -2px 26px 0px rgba(69, 9, 69, 0.2);
+      -moz-box-shadow: 0px -2px 26px 0px rgba(69, 9, 69, 0.2);
+      box-shadow: 0px -2px 26px 0px rgba(69, 9, 69, 0.2);
+      align-items: center;
+      height: 66px;
+      z-index: 9999;
+      padding: 0px 0px 0px 10px;
+  }
+  .mobile-check-out-sect .price-mobile{
+    color: #493066;
+    font-weight: 600;
+    font-size: 17px;
+}
+.mobile-check-out-sect .price-mobile span{
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #b771c3;
+    margin-top: -5px;
+}
+.mobile-check-out-sect .chech-price{
+    flex-basis: 65%;
+}
+.mobile-check-out-sect .chech-price .btn{
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 66px;
+}
 }
 /*--------- Cart Page Wrapper end ---------*/
 /*------ Start Compare Page Wrapper -----*/
