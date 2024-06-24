@@ -1203,6 +1203,7 @@ body.modal-open {
 /*search aera start*/
 .main-sarch .offcanvas{
   max-height: 160px;
+  z-index: 9999;
 }
 .main-sarch .offcanvas-header{
   padding: 0;
