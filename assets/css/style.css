@@ -1200,110 +1200,39 @@ body.modal-open {
 }
 
 /*------ header setting option start ------*/
-/*------ search wrapper start ------*/
-.block-bg {
-  background: rgba(22, 22, 27, 0.98);
-  height: 150px;
-  left: 0;
-  opacity: 0;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  visibility: hidden;
-  width: 100%;
-  z-index: 9999999;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+/*search aera start*/
+.main-sarch .offcanvas{
+  max-height: 160px;
 }
-.block-bg .minisearch .field__search {
-  /* left: 0;
-  margin: 0 auto auto;
-  max-width: 1000px;
-  position: fixed;
-  right: 0;
-  top: 50%; */
+.main-sarch .offcanvas-header{
+  padding: 0;
 }
-.block-bg .minisearch .field__search input {
-  color: #ffffff;
-  background: transparent;
-  border-color: #ffffff;
-  border-width: 0 0 1px;
-  outline: medium none;
-  height: 60px;
-  width: 100%;
-  z-index: 1;
-  position: relative;
-  background: transparent;
-  padding: 0 40px 0 0;
+.main-sarch .offcanvas-header .btn-close{
+position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 20px;
 }
-.block-bg .minisearch .field__search .action {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  z-index: 2;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+.top-togle-search span{
+  display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--heading-color);
+    padding-top: 10px;
 }
-.block-bg .minisearch .field__search .action i {
-  color: #ffffff;
+.top-togle-search .form-control{
+ height:50px
+}
+.top-togle-search .input-group .btn{
+  padding: 0px 30px;
   font-size: 24px;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1499px) {
-  .block-bg .minisearch .field__search {
-    max-width: 800px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .block-bg .minisearch .field__search {
-    max-width: 650px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .block-bg .minisearch .field__search {
-    max-width: 500px;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .block-bg .minisearch .field__search {
-    max-width: 400px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .block-bg .minisearch .field__search {
-    max-width: 280px;
-  }
-}
-.block-bg .close__wrap {
+  border-color: #212121;
+  background: #212121;
   color: #ffffff;
-  cursor: pointer;
-  font-size: 14px;
-  text-transform: uppercase;
-  top: 2px;
-    right: 15px;
-  padding-top: 5px;
-  position: absolute;
-  padding-right: 25px;
 }
-.block-bg .close__wrap:before {
-  top: 0;
-  right: 0;
-  font-size: 20px;
-  vertical-align: middle;
-  content: "";
-  position: absolute;
-  font-family: "FontAwesome";
-}
+/*search aera end*/
 
-.block-bg.is-visible {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  visibility: visible;
-}
-
-/*------ search wrapper end ------*/
 /*------- menu responsive start --------*/
 .mean-container .mean-bar {
   min-height: auto;

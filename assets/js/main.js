@@ -41,20 +41,7 @@
 	});
 
 
-	// searh option js
-	function searchToggler() {
-		var trigger = $('.search-trigger'),
-			container = $('.search_active');
-		trigger.on('click', function (e) {
-			e.preventDefault();
-			container.toggleClass('is-visible');
-		});
 
-		$('.close__wrap').on('click', function () {
-			container.removeClass('is-visible');
-		});
-	}
-	searchToggler();
 
 
 	// Sidebar Category

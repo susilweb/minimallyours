@@ -79,7 +79,7 @@
                   <div class="col-lg-2 col-md-6 col-6 ms-auto">
                      <div class="header-setting-option setting-style-2">
                         <div class="search-wrap">
-                           <button type="submit" class="search-trigger"><i
+                           <button type="submit"  data-bs-toggle="offcanvas" data-bs-target="#searcToptoggle" aria-controls="searcToptoggle"><i
                               class="ion-ios-search-strong"></i></button>
                         </div>
                         <div class="search-wrap">
@@ -154,21 +154,6 @@
             </div>
          </div>
          <!-- main menu area end -->
-         <!-- Start Search Popup -->
-         <div class="box-search-content search_active block-bg close__top">
-            <form class="minisearch" action="#">
-               <div class="field__search">
-                  <input type="text" placeholder="Search Our Catalog">
-                  <div class="action">
-                     <a href="#"><i class="fa fa-search"></i></a>
-                  </div>
-               </div>
-            </form>
-            <div class="close__wrap">
-               <span>close</span>
-            </div>
-         </div>
-         <!-- End Search Popup -->
       </header>
       <!-- header area end -->
       <!-- slider area start -->
@@ -1329,6 +1314,35 @@
          </div>
       </div>
       <!-- Quick view modal end -->
+
+      <!--searchtop-model-->
+   
+
+      <div class="main-sarch">
+         <div class="offcanvas offcanvas-top" tabindex="-1" id="searcToptoggle" aria-labelledby="searcToptoggleLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                   <div class="row justify-content-center">
+                      <div class="col-lg-8">
+                         <div class="top-togle-search">
+                           <span>What are you looking for?</span>
+                            <div class="input-group mb-3">
+                               <input type="text" class="form-control" placeholder="Search for products..." aria-label="Search for products..." aria-describedby="button-addon2">
+                               <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                  class="ion-ios-search-strong"></i></button>
+                             </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          
+      </div>
+
       <!-- Scroll to top start -->
       <div class="scroll-top not-visible">
          <i class="fa fa-angle-up"></i>
