@@ -50,7 +50,6 @@ body {
   font-weight: 400;
   font-family: var(--font-primary);
   color: #606060;
-  line-height: 24px;
 }
 
 a,
@@ -5295,113 +5294,7 @@ display:none
 }
 
 /*------ end Compare Page Wrapper -----*/
-/*-------- Start My Account Page Wrapper --------*/
-.myaccount-tab-menu {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.myaccount-tab-menu a {
-  border: 1px solid #ccc;
-  border-bottom: none;
-  color: #333c4a;
-  font-weight: 500;
-  font-size: 13px;
-  display: block;
-  padding: 10px 15px;
-  text-transform: uppercase;
-}
-.myaccount-tab-menu a:last-child {
-  border-bottom: 1px solid #ccc;
-}
-.myaccount-tab-menu a:hover, .myaccount-tab-menu a.active {
-  background-color: var(--color-hover);
-  border-color: var(--color-hover);
-  color: #ffffff;
-}
-.myaccount-tab-menu a i.fa {
-  font-size: 14px;
-  text-align: center;
-  width: 25px;
-}
 
-@media only screen and (max-width: 767px) {
-  #myaccountContent {
-    margin-top: 30px;
-  }
-}
-
-.myaccount-content {
-  border: 1px solid #eeeeee;
-  padding: 30px;
-}
-@media only screen and (max-width: 575px) {
-  .myaccount-content {
-    padding: 20px 15px;
-  }
-}
-.myaccount-content form {
-  margin-top: -20px;
-}
-.myaccount-content h3 {
-  font-size: 22px;
-  border-bottom: 1px dashed #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
-  font-weight: 400;
-}
-.myaccount-content .welcome a {
-  color: #333c4a;
-}
-.myaccount-content .welcome a:hover {
-  color: var(--color-hover);
-}
-.myaccount-content .welcome strong {
-  font-weight: 600;
-  color: var(--color-hover);
-}
-.myaccount-content fieldset {
-  margin-top: 20px;
-}
-.myaccount-content fieldset legend {
-  color: #333c4a;
-  font-size: 16px;
-  margin-top: 20px;
-  font-weight: 500;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.myaccount-table {
-  white-space: nowrap;
-  font-size: 14px;
-}
-.myaccount-table table th,
-.myaccount-table .table th {
-  color: #333c4a;
-  padding: 10px;
-  font-weight: 500;
-  background-color: #f8f8f8;
-  border-color: #ccc;
-  border-bottom: 0;
-}
-.myaccount-table table td,
-.myaccount-table .table td {
-  padding: 10px;
-  vertical-align: middle;
-  border-color: #ccc;
-}
-
-.saved-message {
-  background-color: #f4f5f7;
-  border-top: 3px solid var(--color-hover);
-  border-radius: 5px 5px 0 0;
-  font-weight: 600;
-  font-size: 14px;
-  color: #606060;
-  padding: 20px;
-}
 
 /*-------- Start My Account Page Wrapper --------*/
 /*------ Start Login & Register Page ------*/
@@ -6515,9 +6408,116 @@ display:none
   color:#f0f0f0
 }
 
-
-
 .bg-bl {
   background: #333333;
   height: 500px;
+}
+
+/*prfile-user*/
+.profile-top{
+  position:relative;
+}
+.profile-top h3{
+  margin-bottom:30px
+}
+.prof-buttom{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.prof-buttom img{
+  background: #cbae64;
+    border-radius: 50%;
+    padding: 3px;
+}
+.prof-buttom h4{
+  font-size:14px;
+}
+.profile-top span{
+  position: absolute;
+  right: 0;
+  top: 75px;
+  font-size: 13px;
+}
+
+.profile-list{
+  background: #f5f5f5;
+  position:relative
+}
+.profile-list .nav-pills .nav-link{
+  border-radius: 0;
+  color:var(--nav-color);
+  border-bottom: 1px solid #fff;
+  padding: 12px 15px;
+}
+.profile-list .nav-pills .nav-link.active{
+  color:var(--color-white);
+  background:var(--color-hover);
+}
+.profile-list .nav-pills .nav-link:hover{
+  background:var(--color-hover);
+  color:var(--color-white)
+}
+.user-profile-content{
+  padding:70px 0px 0px 30px;
+  position:relative
+}
+.user-profile-content .flott{
+  position: absolute;
+  right: 0;
+
+}
+.user-profile-content .flott a{
+  background: var(--heading-color);
+  color: #fff;
+  padding: 10px 15px 7px 15px;
+}
+.user-profile-content h3{
+  font-size:18px;
+  position:relative
+}
+.user-profile-content h3::after{
+  content: '';
+    position: absolute;
+    background: var(--color-hover);
+    width: 110px;
+    height: 3px;
+    bottom: -10px;
+    left: 0px;
+}
+.profle-add{
+  background: var(--color-light-white);
+    padding: 15px;
+}
+.profle-add h4{
+  font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.profle-add address span{
+  font-size: 14px;
+    line-height: 1.7;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.profle-add  .edit-ad{
+  display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.profle-add  .edit-ad a{
+  color: var(--color-hover);
+  font-weight: 600;
+  display: inline-block;
+  padding: 0px 15px 0px 0px;
+  text-decoration: underline;
+}
+.profle-add  .edit-ad a:hover{
+color:var(--heading-color)
+}
+@media only screen and (max-width: 992px) {
+.profle-add{
+  margin-bottom:25px
+}
 }
