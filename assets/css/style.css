@@ -77,11 +77,11 @@ button:focus {
 }
 
 table tbody {
-  border-color: #e5e5e5;
+  /* border-color: #e5e5e5; */
 }
 
 .table > :not(:last-child) > :last-child > * {
-  border-bottom-color: inherit;
+  /* border-bottom-color: inherit; */
 }
 
 button {
@@ -2259,7 +2259,9 @@ position: absolute;
   padding-bottom: 15px;
 }
 .product-item .product-description .product-name h3 a {
-  color: #333c4a;
+  color: var(--heading-color);
+  font-size: 14px;
+    text-transform: capitalize;
 }
 .product-item .product-description .product-name h3 a:hover {
   color: var(--color-hover);
@@ -6466,7 +6468,7 @@ display:none
 .user-profile-content .flott{
   position: absolute;
   right: 0;
-
+  top:80px
 }
 .user-profile-content .flott a{
   background: var(--heading-color);
@@ -6515,6 +6517,247 @@ display:none
 }
 .profle-add  .edit-ad a:hover{
 color:var(--heading-color)
+}
+.my-profile{}
+.my-profile h4{
+  font-size: 15px;
+    margin-bottom: 15px;
+    font-weight:600
+}
+.my-profile h4 span{
+    display: inline-block;
+    margin-left: 10px;
+}
+.my-profile .m-00{
+  margin-left: 73px;
+}
+.single-order-bg{
+  background:#fbfbfb;
+  padding:15px 30px;
+  margin-bottom:15px;
+}
+.my-order-id{
+  margin-bottom:30px;
+  position:relative
+}
+.progress-container {
+margin-bottom:30px
+}
+.flottd{
+  position: absolute;
+    top: 0;
+    right: 0;
+}
+.flottd a {
+  color: var(--color-white);
+  font-weight: 500;
+  display: inline-block;
+  padding: 7px 15px;
+  background: var(--heading-color);
+}
+.flottd a:hover{
+  background: var(--color-hover);
+    color: var(--color-white);
+}
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  position: relative;
+  height: 5px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #4caf50;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: -50px;
+}
+
+.step {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.step.active {
+  background-color: #4caf50;
+}
+
+.step span {
+  display: none;
+}
+
+.step.active span {
+  display: block;
+}
+
+.step:before {
+  content: attr(data-step);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step.active:before {
+  content: '';
+}
+.my-order-product {
+  display: flex;
+  gap: 15px;
+}
+.my-order-product .p-pic{}
+.my-order-product .p-pic img{
+  border: 1px solid #ddd;
+    padding: 3px;
+}
+.my-order-product .o-details div p{
+  margin-bottom:8px
+}
+.my-order-product .o-details div .i-name{
+  font-size: 16px;
+  font-weight: 600;
+}
+.i-price{
+  font-size: 20px;
+    font-weight: 600;
+}
+.p-pic .rating{
+  margin-top: 10px;
+}
+.p-pic .rating .fa{
+  color: #d3cccc;
+  font-size: 18px;
+}
+.p-pic .rating .checked {
+  color: orange;
+}
+.order-extra{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+.order-extra .left{}
+.order-extra .left{}
+.btn-cust{
+  background-color:var(--heading-color);
+  color:var(--color-white);
+  border-radius:0px;
+  padding:7px 15px
+}
+.btn-cust:hover{
+  background-color:var(--color-hover);
+  color:var(--color-white);
+}
+.order-extra .right{
+  display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.order-extra .right a{
+  text-align: center;
+}
+.order-extra .right a .fa{
+  font-size: 18px;
+    background: var(--heading-color);
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    color:var(--color-white)
+}
+.order-extra .right a span{
+  display: block;
+  color:var(--heading-color);
+  font-size:14px;
+  font-weight: 600;
+}
+.order-extra .right a:hover .fa{
+  background-color:var(--color-hover)
+}
+.order-extra .right a:hover span{
+  color:var(--color-hover)
+}
+.d-address{
+  margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+.d-address h4,.p-total-price-d h4{
+  font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.p-total-price-d table{
+  width: 60%;
+}
+.p-total-price-d table tr:nth-child(3),.p-total-price-d table tr:nth-child(4){
+  border-bottom: 1px solid #ddd;
+}
+.p-total-price-d table tr td{
+  padding: 8px 0px;
+}
+.p-total-price-d table tr td:last-child{
+  text-align: right;
+}
+.track-order-input {
+  margin-bottom: 30px;
+}
+.track-order-input .form-control{
+  height: 50px;
+    border-radius: 0;
+}
+.track-order-input .input-group-append .btn{
+  height: 50px;
+    border-radius: 0;
+    background: var(--heading-color);
+    color:var(--color-white)
+}
+.track-order-input .input-group-append .btn:hover{
+  height: 50px;
+    border-radius: 0;
+    background: var(--color-hover);
+    color:var(--color-white)
+}
+.action-wish-list{
+  display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+.action-wish-list a{
+  padding: 10px;
+    flex: 50%;
+}
+.action-wish-list a:nth-child(1){
+  background: #ddd;
+  color:var(--heading-color)
+}
+.action-wish-list a:nth-child(2){
+  background: var(--color-gray);
+  color:var(--color-white)
 }
 @media only screen and (max-width: 992px) {
 .profle-add{
