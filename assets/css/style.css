@@ -6737,8 +6737,6 @@ margin-bottom:30px
     color:var(--color-white)
 }
 .track-order-input .input-group-append .btn:hover{
-  height: 50px;
-    border-radius: 0;
     background: var(--color-hover);
     color:var(--color-white)
 }
@@ -6757,6 +6755,24 @@ margin-bottom:30px
 }
 .action-wish-list a:nth-child(2){
   background: var(--color-gray);
+  color:var(--color-white)
+}
+.profile-password{}
+.profile-password .form-group{}
+.profile-password .form-group .form-control{
+  height: 48px;
+    font-size: 14px;
+    border-radius: 0
+}
+.profile-password .btn{
+  border-radius: 0;
+  background: var(--heading-color);
+  color:var(--color-white);
+  padding:8px 25px;
+  font-size:15px
+}
+.profile-password .btn:hover{
+  background: var(--color-hover);
   color:var(--color-white)
 }
 @media only screen and (max-width: 992px) {
