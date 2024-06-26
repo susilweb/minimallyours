@@ -619,4 +619,24 @@
 		}, 1000);
 	});
 
+	//otp
+	$(document).ready(function() {
+		$('.otp-input').on('input', function() {
+			var $this = $(this);
+			if ($this.val().length >= $this.attr('maxlength')) {
+				$this.next('.otp-input').focus();
+			}
+		});
+
+		$('#submitBtn').click(function() {
+			var otp = '';
+			$('.otp-input').each(function() {
+				otp += $(this).val();
+			});
+		});
+	});
+
+
+
+
 }(jQuery));

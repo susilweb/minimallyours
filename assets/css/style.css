@@ -6983,9 +6983,36 @@ margin-bottom:30px
 
 
 
+.otp-container {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.otp-container h3{
+  font-size:16px;
+  margin-bottom: 30px;
+}
+.otp-input {
+  width: 40px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
 
-
-
+#otpModal .modal-content{
+  padding:30px
+}
 
 
 
