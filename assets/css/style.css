@@ -7025,6 +7025,33 @@ margin-bottom:30px
   width: 200px;
     margin-bottom: 20px;
 }
+.order-confirm-wr{
+  text-align:center
+}
+.order-confirm-wr img{
+  margin-bottom: 20px;
+}
+.order-confirm-wr p{
+  margin-bottom: 30px;
+}
+.order-confirm-wr span{
+  display: inline-block;
+  background: var(--color-gold);
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 16px;
+}
+.user-cart-left-span{
+  display: block;
+}
+.user-cart-left-span span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+.user-cart-left-span span:last-child{
+  margin-bottom: 0px;
+}
 @media only screen and (max-width: 992px) {
 .profle-add{
   margin-bottom:25px
