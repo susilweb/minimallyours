@@ -7014,8 +7014,17 @@ margin-bottom:30px
   padding:30px
 }
 
+.tile-login{
 
+}
 
+.tile-login h3{
+  font-size: 16px !important;
+}
+.tile-login img{
+  width: 200px;
+    margin-bottom: 20px;
+}
 @media only screen and (max-width: 992px) {
 .profle-add{
   margin-bottom:25px
