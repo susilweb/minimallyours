@@ -621,20 +621,26 @@
 
 	//otp
 	$(document).ready(function() {
-		$('.otp-input').on('input', function() {
-			var $this = $(this);
-			if ($this.val().length >= $this.attr('maxlength')) {
-				$this.next('.otp-input').focus();
-			}
-		});
+        $('.otp-input').on('input', function() {
+            var $this = $(this);
+            $this.val($this.val().replace(/[^0-9]/g, '')); // Allow only numeric input
+            if ($this.val().length >= $this.attr('maxlength')) {
+                $this.next('.otp-input').focus();
+            }
+        }).on('keydown', function(e) {
+            var $this = $(this);
+            if (e.key === "Backspace" && $this.val().length === 0) {
+                $this.prev('.otp-input').focus();
+            }
+        });
 
-		$('#submitBtn').click(function() {
-			var otp = '';
-			$('.otp-input').each(function() {
-				otp += $(this).val();
-			});
-		});
-	});
+        $('#submitBtn').click(function() {
+            var otp = '';
+            $('.otp-input').each(function() {
+                otp += $(this).val();
+            });
+        });
+    });
 
 
 
