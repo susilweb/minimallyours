@@ -5255,6 +5255,7 @@ display:none
   font-size:18px;
   position:relative
 }
+
 .user-profile-content h3::after{
   content: '';
     position: absolute;
@@ -5263,6 +5264,34 @@ display:none
     height: 3px;
     bottom: -10px;
     left: 0px;
+}
+.user-profile-content.pd-bb {
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 19px #dfdfdfb0;
+}
+.user-profile-content.pd-bb h3{
+  font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.user-profile-content.pd-bb h3::after{
+  display:none
+}
+.myaccount-page-wrapper.myaccount-page-pp .user-profile-content{
+  padding:0
+}
+.myaccount-page-wrapper.myaccount-page-pp .user-profile-content .d-address,.myaccount-page-wrapper.myaccount-page-pp .user-profile-content .p-total-price-d{
+  border-bottom: none;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 19px #dfdfdfb0;
+}
+.myaccount-page-wrapper.myaccount-page-pp .user-profile-content .p-total-price-d{
+  margin-top: -15px;
+}
+.myaccount-page-wrapper.myaccount-page-pp .user-profile-content .p-total-price-d table{
+width:100%
 }
 .profle-add{
   background: var(--color-light-white);
@@ -5515,6 +5544,11 @@ margin-bottom:30px
 .track-order-input .input-group-append .btn:hover{
     background: var(--color-hover);
     color:var(--color-white)
+}
+.track-order-input h1{
+  text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 .action-wish-list{
   display: flex;
