@@ -7052,6 +7052,14 @@ margin-bottom:30px
 .user-cart-left-span span:last-child{
   margin-bottom: 0px;
 }
+.user-cart-left-span a{
+  color:var(--heading-color);
+  font-size:13px;
+  font-weight:600
+}
+.cart-calculator-wrapper .pp{
+padding:20px 0px 25px 
+}
 @media only screen and (max-width: 992px) {
 .profle-add{
   margin-bottom:25px
