@@ -546,43 +546,8 @@
 	});
 
 
-	// Mail-chimp for dynamic newsletter
-	$('#mc-form,#nl-form').ajaxChimp({
-		language: 'en',
-		callback: mailChimpResponse,
-		// ADD YOUR MAILCHIMP URL BELOW HERE!
-		url: 'https://company.us19.list-manage.com/subscribe/post?u=2f2631cacbe4767192d339ef2&amp;id=24db23e68a'
-
-	});
-
-	// newsletter popup
-	/* $('.popup-close').on('click', function (e) {
-		e.preventDefault();
-		$('#subscribe-popup').fadeOut('slow');
-	});
-	$('.subscribe-btn').on('click', function (e) {
-		$('#subscribe-popup').fadeOut('slow');
-	});
-	$('.popup-subscribe-box-body').on('click', function (e) {
-		e.stopPropagation();
-	});
-
-	$(window).on('load', function(){
-		setTimeout(function(){
-			$('.popup-subscribe-box').addClass('open');
-		},10000);
-	}); */
-
-	// mailchimp active js
-	function mailChimpResponse(resp) {
-		if (resp.result === 'success') {
-			$('.mailchimp-success').html('' + resp.msg).fadeIn(900);
-			$('.mailchimp-error').fadeOut(400);
-
-		} else if (resp.result === 'error') {
-			$('.mailchimp-error').html('' + resp.msg).fadeIn(900);
-		}
-	}
+	
+	
 
 	// Product Hover Visibility
 	$('.product-item.item-black').hover(
@@ -597,12 +562,7 @@
 	);
 
 	// Countdown Activation
-	$('[data-countdown]').each(function() {
-		var $this = $(this), finalDate = $(this).data('countdown');
-		$this.countdown(finalDate, function(event) {
-			$this.html(event.strftime('<div class="single-countdown"><span class="single-countdown__time">%D</span><span class="single-countdown__text">Days</span></div><div class="single-countdown"><span class="single-countdown__time">%H</span><span class="single-countdown__text">Hrs</span></div><div class="single-countdown"><span class="single-countdown__time">%M</span><span class="single-countdown__text">Min</span></div><div class="single-countdown"><span class="single-countdown__time">%S</span><span class="single-countdown__text">Sec</span></div>'));
-		});
-	});
+
 
 
 	// scroll to top
@@ -616,7 +576,7 @@
 	$('.scroll-top').on('click', function (event) {
 		$('html,body').animate({
 			scrollTop: 0
-		}, 1000);
+		}, 500);
 	});
 
 	//otp
